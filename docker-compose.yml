@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  terraform:
+    image: hiogawa/terraform:0.6.16-0.0.1
+    working_dir: /tf_conf
+    env_file: .env
+    volumes:
+      - ./tf_conf:/tf_conf
